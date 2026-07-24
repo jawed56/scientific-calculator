@@ -13,7 +13,7 @@
     <meta property="og:description" content="Une application web avec calculatrice scientifique, agenda, boussole, chronomètre, carte interactive, et horloge numérique avec alarme.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://jawed56.github.io/horloge-digitale/">
-    <meta property="og:image" content="https://i.imgur.com/3TyGAWm.png">
+    <meta property="og:image" content="https://i.imgur.com/gmcIsBn.jpeg">
     <!-- Manifeste pour PWA -->
     <link rel="manifest" href="/scientific-calculator/manifest.json">
     <!-- Intégration de FullCalendar -->
@@ -360,7 +360,7 @@
         .compass {
             width: 100%;
             height: 100%;
-            background: url('https://i.imgur.com/3TyGAWm.png') no-repeat center center;
+            background: url('https://i.imgur.com/gmcIsBn.jpeg') no-repeat center center;
             background-size: cover;
             border-radius: 50%;
             position: relative;
@@ -579,7 +579,7 @@
         <!-- Calculatrice -->
         <div id="calculator" class="tab-content active">
             <h1>Calculatrice Scientifique</h1>
-            <img src="https://i.imgur.com/3TyGAWm.png" class="person-image" alt="Personne">
+            <img src="https://i.imgur.com/gmcIsBn.jpeg" class="person-image" alt="Personne">
             <div class="mode-toggle">
                 <label>Mode : </label>
                 <select id="angleMode">
@@ -643,7 +643,7 @@
         <!-- Agenda -->
         <div id="agenda" class="tab-content">
             <h1>Agenda ThinkPad RL</h1>
-            <img src="https://i.imgur.com/3TyGAWm.png" class="person-image" alt="Personne">
+            <img src="https://i.imgur.com/gmcIsBn.jpeg" class="person-image" alt="Personne">
             <div class="agenda-form">
                 <input type="text" class="agenda-input" id="event-description" placeholder="Description de l'événement">
                 <input type="date" class="agenda-input" id="event-date">
@@ -702,7 +702,7 @@
         <!-- Carte -->
         <div id="map" class="tab-content">
             <h1>Carte</h1>
-            <img src="https://i.imgur.com/3TyGAWm.png" class="person-image" alt="Personne">
+            <img src="https://i.imgur.com/gmcIsBn.jpeg" class="person-image" alt="Personne">
             <div id="map-container" style="height: 400px;"></div>
             <div id="map-message">Chargement de la carte... Veuillez activer la géolocalisation pour centrer la carte sur votre position.</div>
             <button class="map-button" onclick="centerMapOnUser()" style="display: none;" id="map-permission-button">Demander l'accès à la géolocalisation</button>
@@ -711,7 +711,7 @@
         <!-- Horloge Numérique avec Alarme -->
         <div id="clock" class="tab-content">
             <h1>Horloge Numérique</h1>
-            <img src="https://i.imgur.com/3TyGAWm.png" class="person-image" alt="Personne">
+            <img src="https://i.imgur.com/gmcIsBn.jpeg" class="person-image" alt="Personne">
             <div id="clock-display">00:00:00</div>
             <div class="alarm-form">
                 <input type="time" class="alarm-input" id="alarm-time">
@@ -940,7 +940,7 @@
                         if (Notification.permission === 'granted') {
                             new Notification('Rappel d\'événement', {
                                 body: `${event.description} à ${event.time} aujourd'hui !`,
-                                icon: 'https://i.imgur.com/h065EKT.jpeg'
+                                icon: 'https://i.imgur.com/gmcIsBn.jpeg'
                             });
                         }
                     }, reminderTime);
